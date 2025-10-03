@@ -1,0 +1,25 @@
+name: Newman Tests with Report
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  newman-run:
+    runs-on: ubuntu-latest
+      steps:
+        - name: 📥 Checkout repo
+          uses: actions/checkout@v3
+
+        - name: ⚙️ Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+               node-version: "18"
+
+        - name: 📦 Install dependencies
+           run: npm install
+
+        - name: ▶️ Run Newman tests with report
+          run: npm run report
