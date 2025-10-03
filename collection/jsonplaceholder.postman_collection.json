@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "aff311c1-371c-43cd-aa72-1ee6bbd2a806",
+		"name": "jsonplaceholder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1023482",
+		"_collection_link": "https://cloudy-robot-3500.postman.co/workspace/API-Testing~14652a91-57e5-45af-8609-894ebb1c9094/collection/1023482-aff311c1-371c-43cd-aa72-1ee6bbd2a806?action=share&source=collection_link&creator=1023482"
+	},
+	"item": [
+		{
+			"name": "todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/todos/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
