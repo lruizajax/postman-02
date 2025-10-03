@@ -23,3 +23,9 @@ jobs:
 
         - name: ▶️ Run Newman tests with report
           run: npm run report
+        
+        - name: ▶️ Upload New HTML Report
+          uses: actions/upload-artifac@v4
+          with:
+            name: newman-report
+            path: newman/*.html
